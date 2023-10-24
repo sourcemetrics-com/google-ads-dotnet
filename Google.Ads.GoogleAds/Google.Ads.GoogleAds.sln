@@ -32,8 +32,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE4311A2-5800-4F5C-9803-8D15D4C37A80}"
 	ProjectSection(SolutionItems) = preProject
 		..\.github\workflows\di-nuget-pkg.yml = ..\.github\workflows\di-nuget-pkg.yml
-		..\.github\workflows\google-ads-core-nuget-pkg.yml = ..\.github\workflows\google-ads-core-nuget-pkg.yml
-		..\.github\workflows\google-ads-nuget-pkg.yml = ..\.github\workflows\google-ads-nuget-pkg.yml
 	EndProjectSection
 EndProject
 Global
