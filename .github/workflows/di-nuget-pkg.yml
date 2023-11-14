@@ -46,3 +46,9 @@ jobs:
 
       - name: Publish DependencyInjection NuGet package
         run: dotnet nuget push -n -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds.Extensions.DependencyInjection/src/**/*.nupkg
+
+      - name: Build and pack Gax
+        run: dotnet pack -c Debug -p:PackageVersion=$GITVERSION_NUGETVERSIONV2 --include-symbols -p:SymbolPackageFormat=snupkg Google.Ads.Gax/src/Google.Ads.Gax.csproj
+
+      - name: Publish Gax NuGet package
+        run: dotnet nuget push -n -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.Gax/src/**/*.nupkg
