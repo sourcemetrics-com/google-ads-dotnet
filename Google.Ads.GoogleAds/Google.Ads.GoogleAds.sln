@@ -25,14 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extens
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions.DependencyInjection", "..\Google.Ads.GoogleAds.Extensions.DependencyInjection\src\Google.Ads.GoogleAds.Extensions.DependencyInjection.csproj", "{2128D7AC-6B81-4C30-9509-715155C9B738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests", "..\Google.Ads.GoogleAds.Extensions.DependencyInjection\tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests.csproj", "{DF09202F-2E3B-4F91-826C-E47BD8D0C541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests", "..\Google.Ads.GoogleAds.Extensions.DependencyInjection\tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests.csproj", "{DF09202F-2E3B-4F91-826C-E47BD8D0C541}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.Gax.TestUtilities", "..\Google.Ads.Gax\tests\TestUtilities\Google.Ads.Gax.TestUtilities.csproj", "{59C52D08-48BA-474A-AE77-FB1128455E91}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE4311A2-5800-4F5C-9803-8D15D4C37A80}"
-	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\di-nuget-pkg.yml = ..\.github\workflows\di-nuget-pkg.yml
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
