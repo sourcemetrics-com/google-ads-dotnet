@@ -33,16 +33,16 @@ jobs:
         run: dotnet pack -c Debug --version-suffix $GITVERSION_NUGETVERSIONV2 Google.Ads.GoogleAds.Core/src/Google.Ads.GoogleAds.Core.csproj
   
       - name: Publish Core NuGet package
-        run: dotnet nuget push -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds.Core/src/**/*.nupkg;-:Google.Ads.GoogleAds.Core/src/**/*.symbols.nupkg
+        run: dotnet nuget push -n -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds.Core/src/**/*.nupkg;-:Google.Ads.GoogleAds.Core/src/**/*.symbols.nupkg
   
       - name: Build and pack GoogleAds
         run: dotnet pack -c Debug --version-suffix $GITVERSION_NUGETVERSIONV2 Google.Ads.GoogleAds/src/Google.Ads.GoogleAds.csproj
   
       - name: Publish GoogleAds NuGet package
-        run: dotnet nuget push -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds/src/**/*.nupkg;-:Google.Ads.GoogleAds/src/**/*.symbols.nupkg        
+        run: dotnet nuget push -n -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds/src/**/*.nupkg;-:Google.Ads.GoogleAds/src/**/*.symbols.nupkg        
 
       - name: Build and pack DependencyInjection
         run: dotnet pack -c Debug --version-suffix $GITVERSION_NUGETVERSIONV2 Google.Ads.GoogleAds.Extensions.DependencyInjection/src/Google.Ads.GoogleAds.Extensions.DependencyInjection.csproj
 
       - name: Publish DependencyInjection NuGet package
-        run: dotnet nuget push -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds.Extensions.DependencyInjection/src/**/*.nupkg;-:Google.Ads.GoogleAds.Extensions.DependencyInjection/src/**/*.symbols.nupkg
+        run: dotnet nuget push -n -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} Google.Ads.GoogleAds.Extensions.DependencyInjection/src/**/*.nupkg;-:Google.Ads.GoogleAds.Extensions.DependencyInjection/src/**/*.symbols.nupkg
